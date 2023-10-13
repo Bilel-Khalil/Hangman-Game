@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    
+    <div class="game-modal">
+        <div class="content">
+            <img src="assets/images/lost.gif" alt="">
+            <h4>Game Over !</h4>
+            <p>The correct word was : <b>rainbow</b></p>
+            <button class="play-again" onClick="window.location.href=window.location.href">Play Again</button>       
+         </div>
+    </div>
+    <div class="timer-container">00 Sec</div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="assets/images/hangman-0.svg" alt="hangman-img">
+            <h1>Hangman Game</h1>
+        </div>
+
+        <div class="game-box">
+            <ul class="word-display"> </li>
+            </ul>
+            <h4 class="hint-text">
+                Hint :
+                <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ab vero.</b>
+            </h4>
+            <h4 class="guesses-text">
+                Incorrect guesses :
+                <b>0/6</b>
+            </h4>
+            <div class="keyboard"></div>  
+            <div>
+                <div id="score"></div>
+                <button id="resetScore">reset Score</button>
+        </div>
+            <select name="diffucilty" id="selectDiffucilty">
+                <option value="60">hard</option>
+                <option value="120">medium</option>
+                <option value="300">easy</option>
+            </select>
+            <button class="start-btn" >Start Game</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/word-list.js"></script>
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
